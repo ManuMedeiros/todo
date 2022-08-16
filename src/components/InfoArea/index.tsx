@@ -9,7 +9,7 @@ type Props = {
     expense: number;
 }
 
-export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props) => {
+const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props) => {
     
     const handlePrevMonth = () => {
         let [year, month] = currentMonth.split('-');
@@ -44,3 +44,5 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
         </C.Container>
     );
 }
+
+export default InfoArea;
